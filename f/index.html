@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        line-height: 1.5;
+        padding: 16px;
+        background-color: #fafafa;
+        font-size: 12px;
+      }
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 4px;
+      }
+      legend {
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+      label {
+        display: block;
+        margin: 3px 0;
+      }
+      .inline label {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .duas-colunas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 16px;
+      }
+      input[type="text"] {
+        width: 100%;
+        max-width: 520px;
+        font-size: 12px;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        margin-top: 15px;
+        cursor: pointer;
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      button:hover {
+        background-color: #125dc2;
+      }
+      .aviso {
+        background-color: #e8f0fe;
+        border-left: 4px solid #1a73e8;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+      }
+      .aviso strong {
+        color: #1a73e8;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulário - Perguntas para os Obreiros</title>
+  </head>
+  <body>
+    <h1 style="font-size: 14px">Perguntas para os Obreiros</h1>
+
+    <div class="aviso">
+      <strong>Aviso:</strong> Todas as respostas são enviadas de forma
+      <strong>anônima</strong>. Nenhum dado pessoal é coletado ou identificado.
+    </div>
+
+    <form id="formObreiros">
+      <!-- 1 -->
+      <fieldset>
+        <legend>1. Você conhece os membros do seu grupo de assistência?</legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q1" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q1" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 2 -->
+      <fieldset>
+        <legend>
+          2. Você tem assistido aos membros do seu grupo de assistência, como:
+          visitas, serenatas, orações, etc?
+        </legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q2" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q2" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 3 -->
+      <fieldset>
+        <legend>
+          3. Quanto tempo faz que você visitou ou fez uma serenata ou orou por
+          um membro ou família do seu grupo de assistência?
+        </legend>
+        <div class="duas-colunas">
+          <label
+            ><input type="radio" name="q3" value="<1m" required /> Menos de 1
+            mês</label
+          >
+          <label
+            ><input type="radio" name="q3" value=">1m" required /> Mais de 1
+            mês</label
+          >
+          <label
+            ><input type="radio" name="q3" value=">2m" required /> Mais de 2
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q3" value=">3m" required /> Mais de 3
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q3" value=">4m" required /> Mais de 4
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q3" value=">5m" required /> Mais de 5
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q3" value=">6m" required /> Mais de 6
+            meses</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 4 -->
+      <fieldset>
+        <legend>4. Você é fiel nos dízimos?</legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q4" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q4" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 5 -->
+      <fieldset>
+        <legend>5. Quanto tempo faz que você deu seu último dízimo?</legend>
+        <div class="duas-colunas">
+          <label
+            ><input type="radio" name="q5" value="<1m" required /> Menos de 1
+            mês</label
+          >
+          <label
+            ><input type="radio" name="q5" value=">1m" required /> Mais de 1
+            mês</label
+          >
+          <label
+            ><input type="radio" name="q5" value=">2m" required /> Mais de 2
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q5" value=">3m" required /> Mais de 3
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q5" value=">4m" required /> Mais de 4
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q5" value=">5m" required /> Mais de 5
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q5" value=">6m" required /> Mais de 6
+            meses</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 6 -->
+      <fieldset>
+        <legend>6. Você faz as madrugadas às 06h na igreja?</legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q6_faz" value="sim" required />
+            Sim</label
+          >
+          <label
+            ><input type="radio" name="q6_faz" value="nao" required />
+            Não</label
+          >
+        </div>
+        <p><strong>Se não faz a madrugada, marque o motivo:</strong></p>
+        <label
+          ><input type="checkbox" name="q6_motivo_trabalho" value="sim" /> Tá
+          trabalhando no horário</label
+        >
+        <label
+          ><input type="checkbox" name="q6_motivo_saude" value="sim" /> Tem
+          problema de saúde</label
+        >
+        <label
+          ><input type="checkbox" name="q6_motivo_transporte" value="sim" /> Não
+          tem transporte e mora longe</label
+        >
+        <label
+          >Outros motivos:
+          <input type="text" id="q6_outros" name="q6_outros" />
+        </label>
+      </fieldset>
+
+      <!-- 7 -->
+      <fieldset>
+        <legend>
+          7. Se você não faz as madrugadas nenhum dia da semana e organizar
+          melhor a sua agenda pessoal e horário, você conseguiria participar de
+          pelo menos um culto na madrugada?
+        </legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q7" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q7" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 8 -->
+      <fieldset>
+        <legend>
+          8. No dia do seu grupo de assistência, você chega cedo na igreja para
+          fazer a manutenção necessária e participar do culto profético?
+        </legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q8" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q8" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 9 -->
+      <fieldset>
+        <legend>
+          9. Quando você não pode participar no dia do seu grupo de assistência,
+          por motivos justos, você se preocupa em avisar aos demais obreiros do
+          seu grupo e tenta resolver de todas as formas a sua ausência?
+        </legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q9" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q9" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 10 -->
+      <fieldset>
+        <legend>
+          10. No dia do seu grupo de assistência, você separa um momento no
+          decorrer do dia pra orar pelo culto da noite?
+        </legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q10" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q10" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 11 -->
+      <fieldset>
+        <legend>11. Você faz o jejum de domingo, de 00h00 às 09h00?</legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q11" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q11" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 12 -->
+      <fieldset>
+        <legend>
+          12. Nesse mês de outubro de 2025, você foi fiel ao seu período de
+          oração 24h?
+        </legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q12" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q12" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 13 -->
+      <fieldset>
+        <legend>
+          13. Sabemos que a glorificação do servo do Senhor é a expressão de uma
+          alma remida. Quanto tempo faz que você se levantou no culto para
+          glorificar ao Senhor nosso Deus?
+        </legend>
+        <div class="duas-colunas">
+          <label
+            ><input type="radio" name="q13" value="<1m" required /> Menos de 1
+            mês</label
+          >
+          <label
+            ><input type="radio" name="q13" value=">1m" required /> Mais de 1
+            mês</label
+          >
+          <label
+            ><input type="radio" name="q13" value=">2m" required /> Mais de 2
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q13" value=">3m" required /> Mais de 3
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q13" value=">4m" required /> Mais de 4
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q13" value=">5m" required /> Mais de 5
+            meses</label
+          >
+          <label
+            ><input type="radio" name="q13" value=">6m" required /> Mais de 6
+            meses</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 14 -->
+      <fieldset>
+        <legend>14. Você faz o seu culto no lar às sextas-feiras?</legend>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q14" value="sim" required /> Sim</label
+          >
+          <label
+            ><input type="radio" name="q14" value="nao" required /> Não</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- 15 -->
+      <fieldset>
+        <legend>
+          15. Diante dessas perguntas, responda como obreiro do Senhor:
+        </legend>
+
+        <p><strong>Você está em obediência?</strong></p>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q15_obediencia" value="sim" required />
+            Sim</label
+          >
+          <label
+            ><input type="radio" name="q15_obediencia" value="nao" required />
+            Não</label
+          >
+        </div>
+
+        <p><strong>Você está participando da dinâmica da Obra?</strong></p>
+        <div class="inline">
+          <label
+            ><input type="radio" name="q15_dinamica" value="sim" required />
+            Sim</label
+          >
+          <label
+            ><input type="radio" name="q15_dinamica" value="nao" required />
+            Não</label
+          >
+        </div>
+
+        <p><strong>Você está vivendo Obra ou Religião?</strong></p>
+        <div class="inline">
+          <label
+            ><input
+              type="radio"
+              name="q15_obra_religiao"
+              value="obra"
+              required
+            />
+            Obra</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q15_obra_religiao"
+              value="religiao"
+              required
+            />
+            Religião</label
+          >
+        </div>
+
+        <p><strong>Você está vivendo a prática ou a teoria?</strong></p>
+        <div class="inline">
+          <label
+            ><input
+              type="radio"
+              name="q15_pratica_teoria"
+              value="pratica"
+              required
+            />
+            Prática</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q15_pratica_teoria"
+              value="teoria"
+              required
+            />
+            Teoria</label
+          >
+        </div>
+      </fieldset>
+
+      <button type="submit">Enviar Respostas</button>
+    </form>
+
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      const outrosMotivos = document.getElementById("q6_outros");
+      const q6Radios = document.querySelectorAll('input[name="q6_faz"]');
+      const checkboxes = document.querySelectorAll('[name^="q6_motivo_"]');
+
+      function atualizaObrigatoriedadeQ6() {
+        const faz = [...q6Radios].find((r) => r.checked)?.value === "sim";
+        const algumMarcado = [...checkboxes].some((c) => c.checked);
+        outrosMotivos.required = !faz && !algumMarcado;
+      }
+
+      [...q6Radios, ...checkboxes].forEach((el) =>
+        el.addEventListener("change", atualizaObrigatoriedadeQ6)
+      );
+
+      document
+        .getElementById("formObreiros")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          atualizaObrigatoriedadeQ6();
+          if (!this.checkValidity()) {
+            this.reportValidity();
+            return;
+          }
+
+          const formData = new FormData(this);
+          const data = {};
+          for (const [key, value] of formData.entries()) {
+            if (data[key]) {
+              if (!Array.isArray(data[key])) data[key] = [data[key]];
+              data[key].push(value);
+            } else {
+              data[key] = value;
+            }
+          }
+
+          post(data);
+        });
+
+      async function post(data) {
+        const storageKey = "perguntasparaobreiros";
+        const url = "https://api.jsonbin.io/v3/b";
+        const headers = {
+          "Content-Type": "application/json",
+          "X-Access-Key":
+            "$2a$10$hAT1PQtTWY.vtq5BTEeJruDlB.ULfWMknzape/RRM.Xa.xEpds7rG",
+          "X-Bin-Name": "perguntasparaobreiros",
+        };
+
+        data["timestamp"] = new Date();
+        data["userId"] = window.localStorage.getItem(storageKey);
+
+        Swal.fire({
+          title: "Aguarde...",
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          },
+        });
+
+        const res = await fetch(url, {
+          method: "POST",
+          headers,
+          body: JSON.stringify(data),
+        });
+
+        Swal.close();
+
+        if (
+          res.status === 200 &&
+          res.headers.get("Content-Type") === "application/json; charset=utf-8"
+        ) {
+          if (!data["userId"]) {
+            window.localStorage.setItem(
+              storageKey,
+              (await res.json()).metadata.id
+            );
+          }
+
+          Swal.fire({
+            title: "Sucesso!",
+            text: "Respostas enviadas com sucesso!",
+            icon: "success",
+          });
+
+          save(data);
+        } else {
+          Swal.fire({
+            title: "Aviso!",
+            text: "Não foi possível concluir. Tente novamente!",
+            icon: "warning",
+          });
+        }
+      }
+
+      function save(data) {
+        console.log(data);
+        html2pdf()
+          .set({
+            margin: 20,
+            filename: "respostas.pdf",
+          })
+          .from(
+            `<a style="white-space: pre-wrap; font-family: Roboto;">
+Agradecemos o preenchimento deste formulário: Perguntas para os Obreiros 
+
+
+Veja as respostas enviadas.
+
+1. Você conhece os membros do seu grupo de assistência? <b>${data.q1}</b>
+2. Você tem assistido aos membros do seu grupo de assistência, como: visitas, serenatas, orações, etc? <b>${
+              data.q2
+            }</b>
+3. Quanto tempo faz que você visitou ou fez uma serenata ou orou por um membro ou família do seu grupo de assistência? <b>${
+              data.q3
+            }</b>
+4. Você é fiel nos dízimos? <b>${data.q4}</b>
+5. Quanto tempo faz que você deu seu último dízimo? <b>${data.q5}</b>
+6. Você faz as madrugadas às 06h na igreja? <b>${data.q6_faz}</b>
+    a) Tá trabalhando no horário? <b>${data.q6_motivo_trabalho || "nao"}</b>
+    b) Tem problema de saúde? <b>${data.q6_motivo_saude || "nao"}</b>
+    c) Não tem transporte e mora longe? <b>${
+      data.q6_motivo_transporte || "nao"
+    }</b>
+    d) Outros motivos: <b>${data.q6_outros}</b>
+7. Se você não faz as madrugadas nenhum dia da semana e organizar melhor a sua agenda pessoal e horário, você conseguiria participar de pelo menos um culto na madrugada? <b>${
+              data.q7
+            }</b>
+8. No dia do seu grupo de assistência, você chega cedo na igreja para fazer a manutenção necessária e participar do culto profético? <b>${
+              data.q8
+            }</b>
+9. Quando você não pode participar no dia do seu grupo de assistência, por motivos justos, você se preocupa em avisar aos demais obreiros do seu grupo e tenta resolver de todas as formas a sua ausência? <b>${
+              data.q9
+            }</b>
+10. No dia do seu grupo de assistência, você separa um momento no decorrer do dia pra orar pelo culto da noite? <b>${
+              data.q10
+            }</b>
+11. Você faz o jejum de domingo, de 00h00 às 09h00? <b>${data.q11}</b>
+12. Nesse mês de outubro de 2025, você foi fiel ao seu período de oração 24h? <b>${
+              data.q12
+            }</b>
+13. Sabemos que a glorificação do servo do Senhor é a expressão de uma alma remida. Quanto tempo faz que você se levantou no culto para glorificar ao Senhor nosso Deus? <b>${
+              data.q13
+            }</b>
+14. Você faz o seu culto no lar às sextas-feiras? <b>${data.q14}</b>
+15. Diante dessas perguntas, responda como obreiro do Senhor:
+    a) Você está em obediência? <b>${data.q15_obediencia}</b>
+    b) Você está participando da dinâmica da Obra? <b>${data.q15_dinamica}</b>
+    c) Você está vivendo Obra ou Religião? <b>${data.q15_obra_religiao}</b>
+    d) Você está vivendo a prática ou a teoria? <b>${
+      data.q15_pratica_teoria
+    }</b>
+
+
+
+
+
+${data["timestamp"]}
+    </a>`
+          )
+          .save();
+      }
+    </script>
+  </body>
+</html>
